@@ -1,0 +1,102 @@
+
+<section class="detail" *ngIf="pokemon !== undefined">
+  <h2>Informações do Pokémon</h2>
+
+  <div class="row">
+
+
+    <div class="col-md-3">
+      <h5>Nome</h5>
+      <p>{{ pokemon.name }}</p>
+    </div>
+    <div class="col-md-3">
+      <h5>Peso</h5>
+      <p>{{ pokemon.weight }}kg</p>
+    </div>
+    <div class="col-md-3">
+      <h5>Tamanho</h5>
+      <p>{{ pokemon.height }}cm</p>
+    </div>
+    <div class="col-md-3">
+        <h5>Base de Experiência</h5>
+        <p>{{ pokemon.base_experience }}</p>
+    </div>
+  </div>
+
+  <tabs>
+      <tab tabTitle="Habilidades" active="true">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Habilidade</th>
+                <th>Slot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ability of pokemon.abilities">
+                <td>{{ ability.ability.name }}</td>
+                <td>{{ ability.slot }}</td>
+              </tr>
+            </tbody>
+          </table>
+      </tab>
+
+      <tab tabTitle="Estatísticas">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Estatística</th>
+              <th>Aplica</th>
+              <th>Base</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stat of pokemon.stats">
+              <td>{{ stat.stat.name }}</td>
+              <td>{{ stat.effort }}</td>
+              <td>{{ stat.base_stat }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </tab>
+
+      <tab tabTitle="Movimentos">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let move of pokemon.moves">
+                <td>{{ move.move.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </tab>
+
+      <tab tabTitle="Tipos">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let type of pokemon.types">
+            <td>{{ type.type.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </tab>
+  </tabs>
+
+  <a [routerLink]="['/']" class="btn btn-primary btn-md">Voltar</a>
+  <a href="javascript:void(0)" (click)="attachFavorEvent()" class="btn btn-primary btn-md">
+    <span *ngIf="!isFavor">Adicionar Favorito</span>
+    <span *ngIf="isFavor">Remover do Favorito</span>
+  </a>
+</section>
+
+
+

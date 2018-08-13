@@ -1,0 +1,11 @@
+body { background-color: #ecf0f5; }
+
+.list { background-color: white; padding: 0 10px 10px 10px; }
+.list h2 { padding: 1.5rem 0; }
+.list tbody tr:hover { background-color: #d8d8d8; }
+.list tbody tr a { display: block; text-decoration: none; text-transform: capitalize; }
+
+.detail { background-color: white; margin-top: 1.5rem; padding: 15px; border-radius: 5px; }
+.detail tabs { min-height: auto; }
+.detail tabs table { background-color: #FFF; }
+.btn { margin-right: 5px; }

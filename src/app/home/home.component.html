@@ -1,0 +1,22 @@
+<section class="list">
+  <h2 class="mt-4 text-center">Lista de Pokémons</h2>
+
+  <div class="col-lg-12" *ngIf="home !== undefined">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of home.results">
+            <td><a [href]="result.url" (click)="viewPokemonEvent($event, result.url)">{{ result.name }}</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="javascript:void(0)" (click)="changePageEvent($event, home.previous)" *ngIf="home.previous !== null" class="btn btn-primary btn-md">< Página Anterior</a>
+      <a href="javascript:void(0)" (click)="changePageEvent($event, home.next)" *ngIf="home.next !== null" class="btn btn-primary btn-md">Próxima Página ></a>
+  </div>
+
+</section>
