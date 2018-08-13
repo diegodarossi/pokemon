@@ -15,8 +15,14 @@
         </tbody>
       </table>
 
-      <a href="javascript:void(0)" (click)="changePageEvent($event, home.previous)" *ngIf="home.previous !== null" class="btn btn-primary btn-md">< Página Anterior</a>
-      <a href="javascript:void(0)" (click)="changePageEvent($event, home.next)" *ngIf="home.next !== null" class="btn btn-primary btn-md">Próxima Página ></a>
+      <div class="float-left">
+        <a href="javascript:void(0)" (click)="changePageEvent($event, home.previous)" *ngIf="home.previous !== null" class="btn btn-primary btn-md">< Página Anterior</a>
+        <a href="javascript:void(0)" (click)="changePageEvent($event, home.next)" *ngIf="home.next !== null" class="btn btn-primary btn-md">Próxima Página ></a>
+      </div>
+
+      <div class="float-right">
+        <p class="total">Total de {{ home.count }} pokémons.</p>
+      </div>
   </div>
 
 </section>
