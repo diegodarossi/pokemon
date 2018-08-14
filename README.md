@@ -4,7 +4,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 # Programas necessários
 Baixe e instale:
-[GIT](https://git-scm.com/download/win)
+[GIT](https://git-scm.com/download/win) e 
 [NodeJS LTS](https://nodejs.org/en/)
 
 Após a instalação abra o "Prompt de Comando" e execute os comandos abaixo:
