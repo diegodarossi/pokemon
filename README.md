@@ -5,9 +5,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 # Programas necessários
 Baixe e instale o [GIT](https://git-scm.com/download/win) e [NodeJS LTS](https://nodejs.org/en/)
 
-Após a instalação abra o "Prompt de Comando" e execute os comandos abaixo:
-`npm install angular`
-`npm install -g @angular/cli`
+Após a instalação abra o "Prompt de Comando" e execute o comando `npm install angular` e `npm install -g @angular/cli`
 
 # Baixando o projeto e iniciando o servidor
 Com o "Prompt de Comando" aberto navegue até uma pasta que deseja salvar os arquivos do repositório e execute este comando
