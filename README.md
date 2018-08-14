@@ -1,27 +1,28 @@
 # Pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
 
-## Development server
+# Programas necessários
+Baixe e instale:
+[GIT](https://git-scm.com/download/win)
+[NodeJS LTS](https://nodejs.org/en/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Após a instalação abra o "Prompt de Comando" e execute os comandos abaixo:
+`npm install angular`
+`npm install -g @angular/cli`
 
-## Code scaffolding
+# Baixando o projeto e iniciando o servidor
+Com o "Prompt de Comando" aberto navegue até uma pasta que deseja salvar os arquivos do repositório e execute este comando
+`git clone https://github.com/diegodarossi/pokemon.git`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Após baixar os arquivos instale as dependências com o comando
+`npm install`
 
-## Build
+Se ocorrer de travar ou acusar algum erro exclua a pasta "node_modules" e execute novamente o comando `npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Iniciando o servidor
+Execute `ng serve`. Abra o navegador e acesse a URL `http://localhost:4200`, pronto você estará acessando tudo o que foi feito no desafio.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#Observação
+RESTful API(https://pokeapi.co) se apresentou um pouco instável em meus testes, pode ocorrer lentidão ou a falta de resposta do servidor para listagem e visualização dos dados.
