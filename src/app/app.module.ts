@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppService } from './app.service';
 import { DetailComponent } from './detail/detail.component';
-import { TabModule } from '../../node_modules/angular-tabs-component/dist/angular-tabs-component.module';
+import { TabModule } from 'angular-tabs-component/dist/angular-tabs-component.module';
 import { FavorService } from './favor/favor.service';
 import { FavorComponent } from './favor/favor.component';
 
