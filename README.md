@@ -3,9 +3,7 @@
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
 
 # Programas necessários
-Baixe e instale:
-[GIT](https://git-scm.com/download/win) e 
-[NodeJS LTS](https://nodejs.org/en/)
+Baixe e instale o [GIT](https://git-scm.com/download/win) e [NodeJS LTS](https://nodejs.org/en/)
 
 Após a instalação abra o "Prompt de Comando" e execute os comandos abaixo:
 `npm install angular`
