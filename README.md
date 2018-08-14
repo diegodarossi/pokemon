@@ -15,8 +15,7 @@ Após baixar os arquivos instale as dependências com o comando
 
 Se no processo do comando ocorrer de travar ou acusar algum erro exclua a pasta "node_modules" e execute novamente o comando `npm install`
 
-Iniciando o servidor
-Execute `ng serve`. Abra o navegador e acesse a URL `http://localhost:4200`, pronto você estará acessando tudo o que foi feito no desafio.
+Para iniciar o servidor execute `ng serve`. Abra o navegador e acesse a URL `http://localhost:4200`, pronto você estará acessando tudo o que foi feito no desafio.
 
 # Observação
 RESTful API(https://pokeapi.co) se apresentou um pouco instável em meus testes, pode ocorrer lentidão ou a falta de resposta do servidor para listagem e visualização dos dados.
