@@ -1,4 +1,4 @@
-# Pokemon
+# Pokémon
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
 
